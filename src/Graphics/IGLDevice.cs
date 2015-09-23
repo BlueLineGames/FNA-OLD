@@ -65,6 +65,10 @@ namespace Microsoft.Xna.Framework.Graphics
 
 		void Dispose();
 
+		void ResetBackbuffer(
+			PresentationParameters presentationParameters,
+			bool renderTargetBound
+		);
 		void SwapBuffers(
 			Rectangle? sourceRectangle,
 			Rectangle? destinationRectangle,
@@ -358,6 +362,11 @@ namespace Microsoft.Xna.Framework.Graphics
 		}
 
 		int Height
+		{
+			get;
+		}
+
+		DepthFormat DepthFormat
 		{
 			get;
 		}

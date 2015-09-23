@@ -142,7 +142,7 @@ M: System.Int32 SDL2.SDL::SDL_UpdateWindowSurface(System.IntPtr)
 M: System.Int32 SDL2.SDL::SDL_UpdateWindowSurfaceRects(System.IntPtr,SDL2.SDL/SDL_Rect[],System.Int32)
 M: System.Int32 SDL2.SDL::SDL_VideoInit(System.String)
 M: System.Void SDL2.SDL::SDL_VideoQuit()
-M: System.IntPtr SDL2.SDL::SDL_CreateRenderer(System.IntPtr,System.Int32,System.UInt32)
+M: System.IntPtr SDL2.SDL::SDL_CreateRenderer(System.IntPtr,System.Int32,SDL2.SDL/SDL_RendererFlags)
 M: System.IntPtr SDL2.SDL::SDL_CreateSoftwareRenderer(System.IntPtr)
 M: System.IntPtr SDL2.SDL::SDL_CreateTexture(System.IntPtr,System.UInt32,System.Int32,System.Int32,System.Int32)
 M: System.IntPtr SDL2.SDL::SDL_CreateTextureFromSurface(System.IntPtr,System.IntPtr)
@@ -204,6 +204,7 @@ M: System.UInt32 SDL2.SDL::SDL_DEFINE_PIXELFORMAT(SDL2.SDL/SDL_PIXELTYPE_ENUM,SD
 M: System.Byte SDL2.SDL::SDL_PIXELFLAG(System.UInt32)
 M: System.Byte SDL2.SDL::SDL_PIXELTYPE(System.UInt32)
 M: System.Byte SDL2.SDL::SDL_PIXELORDER(System.UInt32)
+M: System.Byte SDL2.SDL::SDL_PIXELLAYOUT(System.UInt32)
 M: System.Byte SDL2.SDL::SDL_BITSPERPIXEL(System.UInt32)
 M: System.Byte SDL2.SDL::SDL_BYTESPERPIXEL(System.UInt32)
 M: System.Boolean SDL2.SDL::SDL_ISPIXELFORMAT_INDEXED(System.UInt32)
@@ -996,7 +997,7 @@ M: System.Int32 SDL2.SDL::SDL_UpdateWindowSurface(System.IntPtr)
 M: System.Int32 SDL2.SDL::SDL_UpdateWindowSurfaceRects(System.IntPtr,SDL2.SDL/SDL_Rect[],System.Int32)
 M: System.Int32 SDL2.SDL::SDL_VideoInit(System.String)
 M: System.Void SDL2.SDL::SDL_VideoQuit()
-M: System.IntPtr SDL2.SDL::SDL_CreateRenderer(System.IntPtr,System.Int32,System.UInt32)
+M: System.IntPtr SDL2.SDL::SDL_CreateRenderer(System.IntPtr,System.Int32,SDL2.SDL/SDL_RendererFlags)
 M: System.IntPtr SDL2.SDL::SDL_CreateSoftwareRenderer(System.IntPtr)
 M: System.IntPtr SDL2.SDL::SDL_CreateTexture(System.IntPtr,System.UInt32,System.Int32,System.Int32,System.Int32)
 M: System.IntPtr SDL2.SDL::SDL_CreateTextureFromSurface(System.IntPtr,System.IntPtr)
@@ -1421,6 +1422,8 @@ R: Gendarme.Rules.Design.EnumsShouldUseInt32Rule
 T: SDL2.SDL/SDL_MessageBoxFlags
 T: SDL2.SDL/SDL_MessageBoxButtonFlags
 T: SDL2.SDL/SDL_WindowEventID
+T: SDL2.SDL/SDL_WindowFlags
+T: SDL2.SDL/SDL_RendererFlags
 T: SDL2.SDL/SDL_EventType
 T: SDL2.SDL/SDL_Keymod
 
@@ -1474,6 +1477,7 @@ M: System.UInt32 SDL2.SDL::SDL_DEFINE_PIXELFOURCC(System.Byte,System.Byte,System
 M: System.Byte SDL2.SDL::SDL_PIXELFLAG(System.UInt32)
 M: System.Byte SDL2.SDL::SDL_PIXELTYPE(System.UInt32)
 M: System.Byte SDL2.SDL::SDL_PIXELORDER(System.UInt32)
+M: System.Byte SDL2.SDL::SDL_PIXELLAYOUT(System.UInt32)
 M: System.Byte SDL2.SDL::SDL_BITSPERPIXEL(System.UInt32)
 M: System.Byte SDL2.SDL::SDL_BYTESPERPIXEL(System.UInt32)
 M: System.UInt32 SDL2.SDL::SDL_MasksToPixelFormatEnum(System.Int32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)
