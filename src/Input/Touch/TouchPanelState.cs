@@ -14,6 +14,10 @@ using System.Collections.Generic;
 
 namespace Microsoft.Xna.Framework.Input.Touch
 {
+    public class Touch_FAKE_TO_TEST_XNA4SPECTEST
+    {
+    }
+
 	public class TouchPanelState
 	{
 		#region Public Properties
