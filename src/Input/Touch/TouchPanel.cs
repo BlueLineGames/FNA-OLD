@@ -95,29 +95,32 @@ namespace Microsoft.Xna.Framework.Input.Touch
 			}
 		}
 
-		public static bool EnableMouseTouchPoint
-		{
-			get
-			{
-				return PrimaryWindow.TouchPanelState.EnableMouseTouchPoint;
-			}
-			set
-			{
-				PrimaryWindow.TouchPanelState.EnableMouseTouchPoint = value;
-			}
-		}
+        // These are not part of the XNA4 spec. Don't know why they appeared
+        // in Monogame and don't appear to be accessed anywhere.
+        // TODO: REMOVE if there are no problems found w/commenting these out.
+        //public static bool EnableMouseTouchPoint
+        //{
+        //    get
+        //    {
+        //        return PrimaryWindow.TouchPanelState.EnableMouseTouchPoint;
+        //    }
+        //    set
+        //    {
+        //        PrimaryWindow.TouchPanelState.EnableMouseTouchPoint = value;
+        //    }
+        //}
 
-		public static bool EnableMouseGestures
-		{
-			get
-			{
-				return PrimaryWindow.TouchPanelState.EnableMouseGestures;
-			}
-			set
-			{
-				PrimaryWindow.TouchPanelState.EnableMouseGestures = value;
-			}
-		}
+        //public static bool EnableMouseGestures
+        //{
+        //    get
+        //    {
+        //        return PrimaryWindow.TouchPanelState.EnableMouseGestures;
+        //    }
+        //    set
+        //    {
+        //        PrimaryWindow.TouchPanelState.EnableMouseGestures = value;
+        //    }
+        //}
 
 		/// <summary>
 		/// Returns true if a touch gesture is available.
@@ -149,7 +152,7 @@ namespace Microsoft.Xna.Framework.Input.Touch
 			return PrimaryWindow.TouchPanelState.GetState();
 		}
 
-		public static TouchPanelState GetState(GameWindow window)
+		public static TouchPanelStateEXT GetStateEXT(GameWindow window)
 		{
 			return window.TouchPanelState;
 		}

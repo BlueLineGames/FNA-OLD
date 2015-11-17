@@ -339,10 +339,10 @@ namespace Microsoft.Xna.Framework.Input.Touch
 				}
 			}
 
-			public void Reset()
-			{
-				position = -1;
-			}
+            void IEnumerator.Reset()
+            {
+                position = -1;
+            }
 		}
 
 		#endregion

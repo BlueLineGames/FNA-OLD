@@ -14,11 +14,7 @@ using System.Collections.Generic;
 
 namespace Microsoft.Xna.Framework.Input.Touch
 {
-    public class Touch_FAKE_TO_TEST_XNA4SPECTEST
-    {
-    }
-
-	public class TouchPanelState
+	public class TouchPanelStateEXT
 	{
 		#region Public Properties
 
@@ -214,7 +210,7 @@ namespace Microsoft.Xna.Framework.Input.Touch
 
 		#region Internal Constructor
 
-		internal TouchPanelState(GameWindow window)
+		internal TouchPanelStateEXT(GameWindow window)
 		{
 			Window = window;
 		}

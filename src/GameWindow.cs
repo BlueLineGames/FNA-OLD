@@ -86,7 +86,7 @@ namespace Microsoft.Xna.Framework
 
 		#region Internal Variables
 
-		internal TouchPanelState TouchPanelState;
+		internal TouchPanelStateEXT TouchPanelState;
 
 		#endregion
 
@@ -100,7 +100,7 @@ namespace Microsoft.Xna.Framework
 
 		protected GameWindow()
 		{
-			TouchPanelState = new TouchPanelState(this);
+			TouchPanelState = new TouchPanelStateEXT(this);
 		}
 
 		#endregion
