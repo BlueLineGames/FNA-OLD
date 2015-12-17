@@ -329,7 +329,7 @@ namespace Microsoft.Xna.Framework.Input.Touch
 				TouchLocation evt = new TouchLocation(
 					touchId,
 					state,
-					position * touchScale,
+					position * touchScale * new Vector2(Window.ClientBounds.Width, Window.ClientBounds.Height),
 					CurrentTimestamp
 				);
 

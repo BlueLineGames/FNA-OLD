@@ -809,7 +809,7 @@ namespace Microsoft.Xna.Framework.Graphics
 			);
 			if (type == GLenum.GL_DEBUG_TYPE_ERROR_ARB)
 			{
-				throw new Exception("ARB_debug_output found an error.");
+                //throw new Exception("ARB_debug_output found an error. Message: " + Marshal.PtrToStringAnsi(message));
 			}
 		}
 

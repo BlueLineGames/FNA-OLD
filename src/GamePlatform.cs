@@ -286,6 +286,11 @@ namespace Microsoft.Xna.Framework
 
 		internal abstract void SetPresentationInterval(PresentInterval interval);
 
+        /// <summary>
+        /// WARNING: This does not appear to be reliable and SDL returns false for
+        /// the 2-in-1 computer that we tested with.
+        /// </summary>
+        /// <returns></returns>
 		internal abstract bool HasTouch();
 
 		internal abstract void TextureDataFromStream(

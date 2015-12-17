@@ -656,6 +656,9 @@ namespace Microsoft.Xna.Framework
 
 		internal override bool HasTouch()
 		{
+            // WARNING: It appears that this always returns 0 until at least one touch event has been received. So this
+            // result should really be thought of as "HasReceivedATouchEver()" rather than telling you whether a touch-capable
+            // device exists on this computer or not.
 			return SDL.SDL_GetNumTouchDevices() > 0;
 		}
 
